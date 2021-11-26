@@ -211,12 +211,12 @@ p {
 }
 
 .btn.btn--primary {
-    background: #3d405b;
-    color: #f4f1de;
+    background: #03045e;
+    color: #fff;
 }
 .btn.btn--primary:hover,
 .btn.btn--primary:focus {
-    color: #fff;
+    color: #f4f1de;
 }
 
 .btn--secondary {
@@ -288,6 +288,7 @@ p {
 
 .hero__tagline {
     font-family: "Montserrat", sans-serif;
+    font-weight: 500;
     color: #e5e5e5;
     margin: 1rem 0 2rem;
 }
@@ -301,4 +302,38 @@ p {
         width: 70%;
         margin: auto;
     }
+}
+/* line **************************************************/
+
+
+.line-container {
+    display: flex;
+    align-items: center;
+}
+.line-container > * {
+    margin: 0 5px;
+    padding: auto 0;
+    white-space: nowrap;
+}
+
+.right::after {
+    content: "";
+    display: inline-block;
+    background: #000;
+    width: 100px;
+    height: 3px;
+}
+.right-lg::after {
+    content: "";
+    display: inline-block;
+    background: #000;
+    width: 100%;
+    height: 3px;
+}
+.left::before {
+    content: "";
+    display: inline-block;
+    background: #000;
+    width: 100px;
+    height: 3px;
 }
