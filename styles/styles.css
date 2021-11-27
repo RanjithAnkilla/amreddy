@@ -40,7 +40,9 @@ small,
 	font-size: 0.8rem;
 }
 
-/* Generic Rules **************************************************/
+p {
+	margin-bottom: 1rem;
+}
 
 .list {
 	list-style: none;
@@ -53,15 +55,23 @@ a {
 	text-decoration-line: none;
 }
 
-p {
-	margin-bottom: 1rem;
-}
-
 /* Container **************************************************/
 
 .container {
 	margin: auto;
 	max-width: 1280px;
+}
+
+/* Grid **************************************************/
+
+.grid {
+	display: grid;
+}
+
+@media screen and (min-width: 768px) {
+	.grid--1x2 {
+		grid-template-columns: repeat (2, 1fr);
+	}
 }
 
 /* Header section **************************************************/
@@ -305,26 +315,26 @@ p {
 	align-items: center;
 }
 .line-container > * {
-	margin: 0 5px;
-	padding: auto 0;
+	margin: 0 10px;
+	/* padding: 0; */
 	white-space: nowrap;
 }
 
-.right::after {
+.line-right::after {
 	content: '';
 	display: inline-block;
 	background: #000;
 	width: 100px;
 	height: 3px;
 }
-.right-lg::after {
+.line-right-lg::after {
 	content: '';
 	display: inline-block;
 	background: #000;
 	width: 100%;
 	height: 3px;
 }
-.left::before {
+.line-left::before {
 	content: '';
 	display: inline-block;
 	background: #000;
@@ -340,4 +350,27 @@ p {
 	vertical-align: middle;
 }
 
-/* About Section **************************************************/
+/* img-container **************************************************/
+
+.img-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.img-container .line-right::after {
+	display: none;
+}
+
+.img-container .line-container {
+	justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+	.img-container .line-container {
+		align-self: flex-end;
+	}
+
+	.img-container .line-right::after {
+		display: inline-block;
+	}
+}
