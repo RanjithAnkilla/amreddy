@@ -252,6 +252,7 @@ a {
 .btn--secondary {
 	background: #f4d58d;
 	color: #000;
+	border: 1px solid #232a34;
 }
 
 .btn--secondary:hover,
@@ -471,7 +472,7 @@ a {
 
 @media screen and (min-width: 768px) {
 	[class*='services__0'] {
-		margin: 3rem auto 8rem;
+		margin: 2rem auto 7rem;
 	}
 }
 
@@ -509,4 +510,51 @@ a {
 	.services__03 .section__content {
 		grid-column: 1 / 2;
 	}
+}
+
+/* Contact Us **************************************************/
+
+.contact {
+	display: flex;
+	flex-direction: column;
+	max-width: 500px;
+	margin-bottom: 7rem;
+	padding: 1rem;
+}
+
+.contact__form {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	display: block;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+textarea {
+	width: 100%;
+	padding: 0.5rem;
+	outline: 0;
+}
+
+textarea {
+	resize: vertical;
+}
+
+input[type='text']:focus,
+input[type='email']:focus,
+input[type='tel']:focus {
+	border: 2px solid #03045e;
+}
+
+textarea:focus {
+	border: 1px solid #03045e;
+}
+
+.form-group,
+textarea {
+	margin-bottom: 1rem;
 }
