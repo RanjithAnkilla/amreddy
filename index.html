@@ -10,14 +10,223 @@
    <link rel="preconnect" href="https://fonts.googleapis.com" />
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Poppins:wght@400;500;700&display=optional"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Poppins:wght@400;500&display=optional"
       rel="stylesheet" />
    <link rel="stylesheet" href="styles/normalize.css" />
    <link rel="stylesheet" href="styles/styles.css" />
 </head>
 
 <body>
-
+   <header class="header">
+      <div class="container">
+         <a href="/" tabindex="-1">
+            <img src="images/AMR_logo.svg" alt="" class="brand" />
+         </a>
+         <div class="chevron-container collapsible">
+            <svg class="chevron-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+               style="fill: rgba(0, 0, 0, 1); transform: ; msfilter: ">
+               <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+            </svg>
+            <svg class="chevron-close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+               style="fill: rgba(0, 0, 0, 1); transform: ; msfilter: ">
+               <path
+                  d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z">
+               </path>
+            </svg>
+         </div>
+         <nav class="header__nav collapsible__content">
+            <ul class="list nav__list">
+               <li class="nav__item"><a href="">Home</a></li>
+               <li class="nav__item"><a href="">About</a></li>
+               <li class="nav__item"><a href="">Services</a></li>
+               <li class="nav__item">
+                  <a class="btn btn--primary" href="">Contact Us</a>
+               </li>
+            </ul>
+         </nav>
+      </div>
+   </header>
+   <main>
+      <section class="hero">
+         <div class="container">
+            <div class="hero__background">
+               <picture>
+                  <source type="image/webp" srcset="
+                            images/chart-674.webp   674w,
+                            images/chart-948.webp   948w,
+                            images/chart-1179.webp 1179w,
+                            images/chart-1280.webp 1280w,
+                            images/chart-1896.webp 1896w,
+                            images/chart-2560.webp 2560w,
+                            images/chart-3072.webp 3072w,
+                            images/chart-6144.webp 6144w
+                        " />
+                  <source type="image/jpeg" srcset="
+                            images/chart-674.jpg   674w,
+                            images/chart-948.jpg   948w,
+                            images/chart-1179.jpg 1179w,
+                            images/chart-1280.jpg 1280w,
+                            images/chart-1896.jpg 1896w,
+                            images/chart-2560.jpg 2560w,
+                            images/chart-3072.jpg 3072w,
+                            images/chart-6144.jpg 6144w
+                        " />
+                  <img src="images/chart-1280.jpg" alt="" />
+               </picture>
+            </div>
+            <div class="hero__content">
+               <h1 class="hero__title">
+                  Compliance is bound to make an impact in your business
+               </h1>
+               <p class="hero__tagline">You are in good hands</p>
+               <a href="" class="btn btn--secondary">view services</a>
+               <a href="" class="btn btn--secondary">contact us</a>
+            </div>
+         </div>
+      </section>
+      <section class="about center">
+         <article class="grid grid--2x2 container section">
+            <h2 class="section__heading">What We Do</h2>
+            <div class="img-container section__img">
+               <div class="line-container line-right">
+                  <h2 class="img-container__head">About Us</h2>
+               </div>
+               <picture>
+                  <source type="image/webp" srcset="images/trust-465.webp 1x,
+                       images/trust-465@2x.webp 2x,
+                       images/trust-465@3x.webp 3x">
+                  <source type="image/jpg" srcset="images/trust-465.jpg 1x,
+                       images/trust-465@2x.jpg 2x,
+                       images/trust-465@3x.jpg 3x">
+                  <img class="img-container__img" src="images/trust-465@3x.jpg"
+                     alt="Team Holding each other, expressing unity and power in teamwork">
+               </picture>
+            </div>
+            <div class="section__content">
+               <p>A. M. Reddy & Associates deliver a wide range of quality professional services that are individually
+                  tailored to meet our clients’ needs. We specialize in providing</p>
+               <ul class="list list--tick section__list">
+                  <li class="list__item">Company Secretarial Services</li>
+                  <li class="list__item">Company Laws</li>
+                  <li class="list__item">Insolvency and Bankruptcy</li>
+                  <li class="list__item">Obtaining DSC's</li>
+                  <li class="list__item">ROC Annual Return Filing</li>
+                  <li class="list__item">Taxation, Accounting and Financial Services</li>
+               </ul>
+               <div class="line-container line-left read-more">
+                  <a href="" class="link">Read More</a>
+               </div>
+            </div>
+         </article>
+      </section>
+      <section class="services">
+         <h2 class="services__heading">Our Services</h2>
+         <section class="services__01">
+            <article class="grid grid--2x2 container section">
+               <h3 class="section__heading">Company Secretarial Services</h3>
+               <div class="img-container section__img">
+                  <div class="line-container line-left">
+                     <h3 class="img-container__head">01</h3>
+                  </div>
+                  <picture>
+                     <source type="image/webp" srcset="images/corporate-600.webp 1x,
+                          images/corporate-600@2x.webp 2x,
+                          images/corporate-600@3x.webp 3x">
+                     <source type="image/jpg" srcset="temp/corporate-600.jpg 1x,
+                          images/corporate-600@2x.jpg 2x,
+                          images/corporate-600@3x.jpg 3x">
+                     <img class="img-container__img" src="images/corporate-600@3x.jpg"
+                        alt="Low Angle View of Office Building Against Sky">
+                  </picture>
+               </div>
+               <div class="section__content">
+                  <p>Companies need to address a variety of laws and regulations, both domestically and globally. We
+                     ensure
+                     that the company meets all general financial and legal requirements.</p>
+                  <ul class="list list--tick section__list">
+                     <li class="list__item">Corporate Governance</li>
+                     <li class="list__item">Corporate Advisory Services</li>
+                     <li class="list__item">Secretarial Audit</li>
+                     <li class="list__item">Corporate Compliance</li>
+                     <li class="list__item">Insolvency and Bankruptcy</li>
+                  </ul>
+                  <div class="line-container line-left read-more">
+                     <a href="" class="link">Read More</a>
+                  </div>
+               </div>
+            </article>
+         </section>
+         <section class="services__02">
+            <article class="grid grid--2x2 container section">
+               <h3 class="section__heading">Accounting services</h3>
+               <div class="img-container section__img">
+                  <div class="line-container line-right">
+                     <h3 class="img-container__head">02</h3>
+                  </div>
+                  <picture>
+                     <source type="image/webp" srcset="images/calculator-679.webp 1x,
+                       images/calculator-679@2x.webp 2x,
+                       images/calculator-679@3x.webp 3x">
+                     <source type="image/jpg" srcset="images/calculator-679.jpg 1x,
+                       images/calculator-679@2x.jpg 2x,
+                       images/calculator-679@3x.jpg 3x">
+                     <img class="img-container__img" src="images/calculator-679@3x.jpg"
+                        alt="Black and White Calculator Beside a Pen and white paper">
+                  </picture>
+               </div>
+               <div class="section__content">
+                  <p>The process of recording, summarizing. Preparing and maintaining daily accounting and monthly or
+                     quarterly accounts, analyzing and reporting all transactions.</p>
+                  <ul class="list list--tick section__list">
+                     <li class="list__item">Bank Reconciliation</li>
+                     <li class="list__item">Financial Statements</li>
+                     <li class="list__item">Management Accounting</li>
+                     <li class="list__item">Accounting assistance</li>
+                     <li class="list__item">Income tax preparation and compliance.</li>
+                  </ul>
+                  <div class="line-container line-left read-more">
+                     <a href="" class="link">Read More</a>
+                  </div>
+               </div>
+            </article>
+         </section>
+         <section class="services__03">
+            <article class="grid grid--2x2 container section">
+               <h3 class="section__heading">Tax & Business</h3>
+               <div class="img-container section__img">
+                  <div class="line-container line-left">
+                     <h3 class="img-container__head">03</h3>
+                  </div>
+                  <picture>
+                     <source type="image/webp" srcset="images/tax-465.webp 1x,
+                          images/tax-465@2x.webp 2x,
+                          images/tax-465@3x.webp 3x">
+                     <source type="image/jpg" srcset="images/tax-465.jpg 1x,
+                          images/tax-465@2x.jpg 2x,
+                          images/tax-465@3x.jpg 3x">
+                     <img class="img-container__img" src="images/tax-465@3x.jpg" alt="Tax Documents on the Table">
+                  </picture>
+               </div>
+               <div class="section__content">
+                  <p>Professional tax filing services, reduces overall costs by management and administration to
+                     minimize
+                     the annual tax burden.</p>
+                  <ul class="list list--tick section__list">
+                     <li class="list__item">Income tax return planning and preparation.</li>
+                     <li class="list__item">Tax return preparation.</li>
+                     <li class="list__item">Tax compliance and planning.</li>
+                     <li class="list__item">Indirect Tax Returns</li>
+                     <li class="list__item">Accounting for partnerships</li>
+                  </ul>
+                  <div class="line-container line-left read-more">
+                     <a href="" class="link">Read More</a>
+                  </div>
+               </div>
+            </article>
+         </section>
+      </section>
+   </main>
+   <script src="src/main.js"></script>
 </body>
 
 </html>
