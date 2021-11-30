@@ -1,0 +1,23 @@
+<section class="container contact">
+   <div class="line-right-lg line-container">
+      <h3 class="contact__title">Contact Us</h3>
+   </div>
+   <form action="https://formspree.io/f/mrgjzloz" method="post" class="contact__form">
+      <div class="form-group">
+         <label for="full-name">First & Last Name*</label>
+         <input type="text" name="Full Name" id="full-name" required minlength="3" maxlength="20"
+            placeholder="First & Last Name">
+      </div>
+      <div class="form-group">
+         <label for="email">Email*</label>
+         <input type="email" name="Email Id" id="email" required maxlength="30" placeholder="email@domain.tld">
+      </div>
+      <div class="form-group">
+         <label for="tel-no">Phone number <small>(+91 1234567890)</small></label>
+         <input type="tel" name="Telephone Number" id="tel-no" minlength="10" maxlength="14"
+            pattern="[+][9][1][ ][0-9]{1}[0-9]{9}" placeholder="+91 1234567890" value="+91 ">
+      </div>
+      <textarea name="Message" cols="30" rows="8" placeholder="Your Message ..."></textarea>
+      <button type="submit" class="btn btn--secondary btn--form">Submit</button>
+   </form>
+</section>

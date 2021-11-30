@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>A. M. Reddy & Associates | Tax & Business</title>
+   <link rel="shortcut icon" type="image/x-icon" href="amr-favicon.ico" />
+   <link rel="stylesheet" href="/styles/normalize.css" />
+   <link rel="stylesheet" href="/styles/styles.css" />
+</head>
+
+<body>
+   <header class="header">
+      <div class="container">
+         <a href="/" tabindex="-1">
+            <img src="/images/AMR_logo.svg" alt="" class="brand" />
+         </a>
+         <div class="chevron-container collapsible">
+            <svg class="chevron-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+               style="fill: rgba(0, 0, 0, 1); transform: ; msfilter: ">
+               <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+            </svg>
+            <svg class="chevron-close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+               style="fill: rgba(0, 0, 0, 1); transform: ; msfilter: ">
+               <path
+                  d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z">
+               </path>
+            </svg>
+         </div>
+         <nav class="header__nav collapsible__content">
+            <ul class="list nav__list">
+               <li class="nav__item"><a href="/">Home</a></li>
+               <li class="nav__item"><a href="/services.html">Services</a></li>
+               <li class="nav__item"><a href="/#about">About</a></li>
+               <li class="nav__item">
+                  <a class="btn btn--primary" href="#contact">Contact Us</a>
+               </li>
+            </ul>
+         </nav>
+      </div>
+   </header>
+   <main>
+      <section class="hero services-page__hero">
+         <div class="container">
+            <div class="hero__background">
+               <picture>
+                  <source type="image/webp" srcset="
+                            /images/chart-674.webp   674w,
+                            /images/chart-948.webp   948w,
+                            /images/chart-1179.webp 1179w,
+                            /images/chart-1280.webp 1280w,
+                            /images/chart-1896.webp 1896w,
+                            /images/chart-2560.webp 2560w,
+                            /images/chart-3072.webp 3072w,
+                            /images/chart-6144.webp 6144w
+                        " />
+                  <source type="image/jpeg" srcset="
+                            /images/chart-674.jpg   674w,
+                            /images/chart-948.jpg   948w,
+                            /images/chart-1179.jpg 1179w,
+                            /images/chart-1280.jpg 1280w,
+                            /images/chart-1896.jpg 1896w,
+                            /images/chart-2560.jpg 2560w,
+                            /images/chart-3072.jpg 3072w,
+                            /images/chart-6144.jpg 6144w
+                        " />
+                  <img src="/images/chart-1280.jpg" alt="" />
+               </picture>
+            </div>
+            <div class="hero__content">
+               <h1 class="hero__title">Tax and Business</h1>
+            </div>
+         </div>
+      </section>
+      <article class="container services--page__content">
+         <h2 class="services--page__heading">Tax & Business</h2>
+         <p>Our team with extensive experience in providing a wide range of accounting and tax services, including tax
+            returns, corporate income tax returns, and various professional tax filing services, reduces overall costs
+            by management and administration to minimize the annual tax burden.</p>
+         <h3>Services</h3>
+         <p>The various Tax services we offer are:</p>
+         <ul>
+            <li>Income tax return planning and preparation.</li>
+            <li>Tax return preparation.</li>
+            <li>Tax compliance and planning.</li>
+            <li>Indirect Tax Returns</li>
+            <li>Accounting for partnerships</li>
+            <li>Structured Tax and Due Diligence</li>
+         </ul>
+      </article>
+      <section id="contact" class="container contact">
+         <div class="wrapper">
+            <div class="line-right-lg line-container">
+               <h3 class="contact__title">Contact Us</h3>
+            </div>
+            <form action="https://formspree.io/f/mrgjzloz" method="post" class="contact__form">
+               <div class="form-group">
+                  <label for="full-name">First & Last Name*</label>
+                  <input type="text" name="Full Name" id="full-name" required minlength="3" maxlength="20"
+                     placeholder="First & Last Name">
+               </div>
+               <div class="form-group">
+                  <label for="email">Email*</label>
+                  <input type="email" name="Email Id" id="email" required maxlength="30" placeholder="email@domain.tld">
+               </div>
+               <div class="form-group">
+                  <label for="tel-no">Phone number <small>(+91 1234567890)</small></label>
+                  <input type="tel" name="Telephone Number" id="tel-no" minlength="10" maxlength="14"
+                     pattern="[+][9][1][ ][0-9]{1}[0-9]{9}" placeholder="+91 1234567890" value="+91 ">
+               </div>
+               <textarea name="Message" cols="30" rows="8" placeholder="Your Message ..."></textarea>
+               <button type="submit" class="btn btn--secondary btn--form">Submit</button>
+            </form>
+         </div>
+      </section>
+      <section class="footer">
+         <ul class="list list--inline footer__list">
+            <li class="list-item"><a href="/" class="link">Home</a></li>
+            <li class="list-item"><a href="/services.html" class="link">Services</a></li>
+            <li class="list-item"><a href="/#about" class="link">About</a></li>
+            <li class="list-item"><a href="#contact" class="link">Contact Us</a></li>
+         </ul>
+         <div>
+            <ul class="list">
+               <li class="footer__email"><a href="mailto:reddyamr@gmail.com" class="link">reddyamr@gmail.com</a></li>
+               <li class="footer__phone"><a href="tel:+91-83094-19626" class="link">+91 83094-19626</a></li>
+            </ul>
+         </div>
+         <a href="#top" class="chevron-top">
+            <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 24 24"
+               style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;">
+               <path d="m12 6.879-7.061 7.06 2.122 2.122L12 11.121l4.939 4.94 2.122-2.122z"></path>
+            </svg>
+         </a>
+         <p class="copy">&copy; 2021 All Rights Reserved</p>
+      </section>
+   </main>
+   <script src="/src/main.js"></script>
+</body>
+
+</html>
