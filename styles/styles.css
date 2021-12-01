@@ -509,7 +509,7 @@ html {
 
 @media screen and (min-width: 768px) {
 	.about .section {
-		padding: 7rem 0;
+		padding: 7rem 1rem;
 	}
 	.about .read-more {
 		justify-content: flex-end;
