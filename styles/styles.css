@@ -59,8 +59,8 @@ html {
 }
 
 ::selection {
-	background: #f4d58d;
-	color: #000;
+	background: lightblue;
+	color: #222;
 }
 
 .link {
@@ -350,14 +350,13 @@ html {
 
 @media screen and (min-width: 768px) {
 	.chevron-down img {
-		width: 54px;
-		height: 54px;
+		width: 32px;
+		height: 32px;
 	}
 }
 
 .chevron-down {
 	position: absolute;
-	/* opacity: 0.7; */
 	bottom: 1rem;
 	left: 0;
 	width: 100%;

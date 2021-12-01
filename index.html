@@ -14,6 +14,7 @@
       rel="stylesheet" />
    <link rel="stylesheet" href="/styles/normalize.css" />
    <link rel="stylesheet" href="/styles/styles.css" />
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body id="top">
@@ -74,7 +75,7 @@
                   <img src="/images/chart-1280.jpg" alt="" />
                </picture>
             </div>
-            <div class="hero__content">
+            <div class="hero__content" data-aos="zoom-in">
                <h1 class="hero__title">
                   Compliance is bound to make an impact in your business
                </h1>
@@ -83,14 +84,14 @@
                <a href="#contact" class="btn btn--secondary">contact us</a>
             </div>
             <a tabindex="-1" href="#about" class="chevron-down">
-               <img src="/images/svgs/chevron-down.svg" alt="">
+               <img src=" /images/svgs/chevron-down.svg" alt="">
             </a>
          </div>
       </section>
       <section id="about" class="center about">
          <article class="grid grid--2x2 container section">
             <h2 class="section__heading">What We Do</h2>
-            <div class="img-container section__img">
+            <div class="img-container section__img" data-aos="fade-right">
                <div class="line-container line-right">
                   <h2 class="img-container__head">About Us</h2>
                </div>
@@ -105,7 +106,7 @@
                      alt="Team Holding each other, expressing unity and power in teamwork">
                </picture>
             </div>
-            <div class="section__content">
+            <div class="section__content" data-aos="fade-left">
                <p>A. M. Reddy & Associates deliver a wide range of quality professional services that are individually
                   tailored to meet our clients’ needs. We specialize in providing</p>
                <ul class="list list--tick section__list">
@@ -127,7 +128,7 @@
          <section class="services__01">
             <article class="grid grid--2x2 container section">
                <h3 class="section__heading">Company Secretarial Services</h3>
-               <div class="img-container section__img">
+               <div class="img-container section__img" data-aos="fade-left">
                   <div class="line-container line-left">
                      <h3 class="img-container__head">01</h3>
                   </div>
@@ -142,7 +143,7 @@
                         alt="Low Angle View of Office Building Against Sky">
                   </picture>
                </div>
-               <div class="section__content">
+               <div class="section__content" data-aos="fade-right">
                   <p>Companies need to address a variety of laws and regulations, both domestically and globally. We
                      ensure
                      that the company meets all general financial and legal requirements.</p>
@@ -162,7 +163,7 @@
          <section class="services__02">
             <article class="grid grid--2x2 container section">
                <h3 class="section__heading">Accounting services</h3>
-               <div class="img-container section__img">
+               <div class="img-container section__img" data-aos="fade-right">
                   <div class="line-container line-right">
                      <h3 class="img-container__head">02</h3>
                   </div>
@@ -177,7 +178,7 @@
                         alt="Black and White Calculator Beside a Pen and white paper">
                   </picture>
                </div>
-               <div class="section__content">
+               <div class="section__content" data-aos="fade-left">
                   <p>The process of recording, summarizing. Preparing and maintaining daily accounting and monthly or
                      quarterly accounts, analyzing and reporting all transactions.</p>
                   <ul class="list list--tick section__list">
@@ -196,7 +197,7 @@
          <section class="services__03">
             <article class="grid grid--2x2 container section">
                <h3 class="section__heading">Tax & Business</h3>
-               <div class="img-container section__img">
+               <div class="img-container section__img" data-aos="fade-left">
                   <div class="line-container line-left">
                      <h3 class="img-container__head">03</h3>
                   </div>
@@ -210,7 +211,7 @@
                      <img class="img-container__img" src="/images/tax-465@3x.jpg" alt="Tax Documents on the Table">
                   </picture>
                </div>
-               <div class="section__content">
+               <div class="section__content" data-aos="fade-right">
                   <p>Professional tax filing services, reduces overall costs by management and administration to
                      minimize
                      the annual tax burden.</p>
@@ -228,7 +229,7 @@
             </article>
          </section>
       </section>
-      <section id="contact" class="container contact">
+      <section id="contact" class="container contact" data-aos="zoom-out">
          <div class="wrapper">
             <div class="line-right-lg line-container">
                <h3 class="contact__title">Contact Us</h3>
@@ -276,6 +277,10 @@
       </section>
    </main>
    <script src="/src/main.js"></script>
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+      AOS.init();
+   </script>
 </body>
 
 </html>
